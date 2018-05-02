@@ -61,13 +61,14 @@ function getTotalX(a, b) {
         begin_a = LCM(a[0], a[1]);
     }
     
-    if(a.length == 2)
+    if(b.length == 2)
         begin_b = GCD(b[0], b[1]);
     
     
     if(a.length > 2)
     {
         var tmp = LCM(a[0], a[1]);
+
         
         var i = 2;
         while(i < a.length)
@@ -90,6 +91,7 @@ function getTotalX(a, b) {
         }
         begin_b = tmp;
     }
+    
     
     for(var i = begin_a; i <= begin_b; i++)
     {
@@ -122,5 +124,6 @@ function main() {
 
     ws.end();
 }
+
 
 
